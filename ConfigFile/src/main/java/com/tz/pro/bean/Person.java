@@ -1,4 +1,4 @@
-package com.example.config.bean;
+package com.tz.pro.bean;
 
 
 import lombok.AllArgsConstructor;

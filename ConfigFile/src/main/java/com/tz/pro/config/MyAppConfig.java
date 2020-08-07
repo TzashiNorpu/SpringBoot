@@ -1,7 +1,7 @@
-package com.example.config.config;
+package com.tz.pro.config;
 
 
-import com.example.config.service.HelloService;
+import com.tz.pro.service.HelloService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

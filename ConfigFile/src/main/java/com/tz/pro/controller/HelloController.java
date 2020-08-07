@@ -1,4 +1,4 @@
-package com.example.config.controller;
+package com.tz.pro.controller;
 
 
 import org.springframework.beans.factory.annotation.Value;

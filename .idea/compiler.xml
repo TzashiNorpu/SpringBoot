@@ -7,20 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HelloWorld" />
-        <module name="config" />
+        <module name="ConfigfileLoad" />
+        <module name="ConfigFile" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config" target="1.8" />
       <module name="ConfigFile" target="1.8" />
+      <module name="ConfigfileLoad" target="1.8" />
       <module name="HelloWorld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ConfigFile" options="-parameters" />
+      <module name="ConfigfileLoad" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
-      <module name="config" options="-parameters" />
     </option>
   </component>
 </project>
