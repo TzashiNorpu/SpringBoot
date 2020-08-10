@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/config/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigFile/pom.xml" />
         <option value="$PROJECT_DIR$/AutoConfig/pom.xml" />
+        <option value="$PROJECT_DIR$/Crud/pom.xml" />
       </list>
     </option>
   </component>

@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
     <file url="file://$PROJECT_DIR$/AutoConfig/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ConfigFile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Crud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HelloWorld/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HelloWorld" />
         <module name="ConfigfileLoad" />
+        <module name="Crud" />
         <module name="ConfigFile" />
         <module name="AutoConfig" />
       </profile>
@@ -16,6 +18,7 @@
       <module name="AutoConfig" target="1.8" />
       <module name="ConfigFile" target="1.8" />
       <module name="ConfigfileLoad" target="1.8" />
+      <module name="Crud" target="1.8" />
       <module name="HelloWorld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -24,6 +27,7 @@
       <module name="AutoConfig" options="-parameters" />
       <module name="ConfigFile" options="-parameters" />
       <module name="ConfigfileLoad" options="-parameters" />
+      <module name="Crud" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
     </option>
   </component>
