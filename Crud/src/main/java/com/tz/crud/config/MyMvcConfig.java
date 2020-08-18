@@ -1,3 +1,4 @@
+/*
 package com.tz.crud.config;
 
 import org.springframework.context.annotation.Bean;
@@ -47,11 +48,14 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter
         return adapter;
     }
 
+*/
 /*
     @Bean
     public LocaleResolver localeResolver(){
         return new MyLocaleResolver();
     }
-*/
+*//*
+
 
 }
+*/

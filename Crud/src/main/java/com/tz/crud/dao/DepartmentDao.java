@@ -6,8 +6,6 @@ import java.util.Map;
 
 import com.tz.crud.entities.Department;
 import org.springframework.stereotype.Repository;
-
-
 @Repository
 public class DepartmentDao {
 
@@ -22,11 +20,9 @@ public class DepartmentDao {
 		departments.put(104, new Department(104, "D-DD"));
 		departments.put(105, new Department(105, "D-EE"));
 	}
-	
 	public Collection<Department> getDepartments(){
 		return departments.values();
 	}
-	
 	public Department getDepartment(Integer id){
 		return departments.get(id);
 	}

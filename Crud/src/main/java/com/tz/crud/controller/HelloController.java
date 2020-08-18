@@ -13,15 +13,15 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
-//    @RequestMapping({"/","/index.html"})
-//    public String index(){
-//        return "index";
-//    }
+/*    @RequestMapping({"/","/index.html"})
+    public String index(){
+        return "index";
+    }*/
 
     @ResponseBody
     @RequestMapping("/hello")
-    public  String hello(@RequestParam("user") String user){
-        if(user.equals("aaa")){
+    public String hello(@RequestParam("user") String user) {
+        if (user.equals("aaa")) {
             throw new UserNotExistException();
         }
         return "Hello World";
@@ -29,12 +29,11 @@ public class HelloController {
 
     //查出用户数据，在页面展示
     @RequestMapping("/success")
-    public String success(Map<String,Object> map){
-        map.put("hello","<h1>你好</h1>");
-        map.put("users",Arrays.asList("zhangsan","lisi","wangwu"));
+    public String success(Map<String, Object> map) {
+        map.put("hello", "<h1>你好</h1>");
+        map.put("users", Arrays.asList("zhangsan", "lisi", "wangwu"));
         return "success";
     }
-
 
 
 }
