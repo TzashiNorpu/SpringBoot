@@ -2,6 +2,8 @@ package com.tz.crud.config;
 
 import com.tz.crud.component.LoginHandlerInterceptor;
 import com.tz.crud.component.MyLocaleResolver;
+import org.springframework.boot.autoconfigure.websocket.servlet.TomcatWebSocketServletWebServerCustomizer;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -28,7 +30,7 @@ public class MyMvcConfigTest implements WebMvcConfigurer {
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
 
-            //注册拦截器
+            //注册拦截器 权限验证
             @Override
             public void addInterceptors(InterceptorRegistry registry) {
                 //静态资源；  *.css , *.js

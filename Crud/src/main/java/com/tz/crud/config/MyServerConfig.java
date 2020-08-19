@@ -3,6 +3,8 @@ package com.tz.crud.config;
 import com.tz.crud.filter.MyFilter;
 import com.tz.crud.listener.MyListener;
 import com.tz.crud.servlet.MyServlet;
+import org.springframework.boot.autoconfigure.websocket.servlet.TomcatWebSocketServletWebServerCustomizer;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -49,5 +51,16 @@ public class MyServerConfig {
             }
         };
     }*/
+
+    // 嵌入式Tomcat除配置文件之外的实现方式
+    @Bean
+    public TomcatWebSocketServletWebServerCustomizer tomcatWebSocketServletWebServerCustomizer(){
+        return new TomcatWebSocketServletWebServerCustomizer(){
+            @Override
+            public void customize(TomcatServletWebServerFactory factory) {
+                factory.setPort(8753);
+            }
+        };
+    }
 
 }

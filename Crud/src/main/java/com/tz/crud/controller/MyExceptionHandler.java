@@ -21,6 +21,7 @@ public class MyExceptionHandler {
 //        map.put("message",e.getMessage());
 //        return map;
 //    }
+    // 页面返回和json返回自适应
     @ExceptionHandler(UserNotExistException.class)
     public String handleException(Exception e, HttpServletRequest request) {
         Map<String, Object> map = new HashMap<>();

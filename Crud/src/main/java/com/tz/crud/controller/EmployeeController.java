@@ -78,6 +78,7 @@ public class EmployeeController {
     //员工删除
     @DeleteMapping("/emp/{id}")
     public String deleteEmployee(@PathVariable("id") Integer id) {
+        System.out.println("要删除的员工ID："+id);
         employeeDao.delete(id);
         return "redirect:/emps";
     }
