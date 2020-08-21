@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ExternalTomcat" />
         <module name="HelloWorld" />
-        <module name="ConfigfileLoad" />
-        <module name="Crud" />
         <module name="ConfigFile" />
         <module name="AutoConfig" />
+        <module name="Crud" />
+        <module name="ConfigfileLoad" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="ConfigFile" target="1.8" />
       <module name="ConfigfileLoad" target="1.8" />
       <module name="Crud" target="1.8" />
+      <module name="ExternalTomcat" target="1.8" />
       <module name="HelloWorld" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +30,7 @@
       <module name="ConfigFile" options="-parameters" />
       <module name="ConfigfileLoad" options="-parameters" />
       <module name="Crud" options="-parameters" />
+      <module name="ExternalTomcat" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
     </option>
   </component>
