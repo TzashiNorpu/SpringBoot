@@ -10,6 +10,7 @@
         <module name="ExternalTomcat" />
         <module name="HelloWorld" />
         <module name="ConfigFile" />
+        <module name="DataAccess" />
         <module name="AutoConfig" />
         <module name="Crud" />
         <module name="ConfigfileLoad" />
@@ -20,6 +21,7 @@
       <module name="ConfigFile" target="1.8" />
       <module name="ConfigfileLoad" target="1.8" />
       <module name="Crud" target="1.8" />
+      <module name="DataAccess" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
       <module name="HelloWorld" target="1.8" />
     </bytecodeTargetLevel>
@@ -30,6 +32,7 @@
       <module name="ConfigFile" options="-parameters" />
       <module name="ConfigfileLoad" options="-parameters" />
       <module name="Crud" options="-parameters" />
+      <module name="DataAccess" options="-parameters" />
       <module name="ExternalTomcat" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
     </option>

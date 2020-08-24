@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/AutoConfig/pom.xml" />
         <option value="$PROJECT_DIR$/Crud/pom.xml" />
         <option value="$PROJECT_DIR$/ExternalTomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/DataAccess/pom.xml" />
       </list>
     </option>
   </component>
