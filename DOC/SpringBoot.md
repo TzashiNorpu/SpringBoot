@@ -286,7 +286,7 @@ static class Registrar implements ImportBeanDefinitionRegistrar, DeterminableImp
 ​		List<String> configurations = SpringFactoriesLoader.loadFactoryNames(getSpringFactoriesLoaderFactoryClass(),getBeanClassLoader());
        其中SpringFactoriesLoader类有属性：public static final String FACTORIES_RESOURCE_LOCATION = "META-INF/spring.factories";
        getSpringFactoriesLoaderFactoryClass() ==> EnableAutoConfiguration.class; 这个类的全类名为：org/springframework/boot/autoconfigure/EnableAutoConfiguration.java
-       因此去类路径的 META-INF/spring.factories 文件中去拿 org.springframework.boot.autoconfigure.EnableAutoConfiguration 的配置项
+       因此去类路径的 META-INF/spring.factories 文件中去拿 org.springframework.boot.autoconfigure.EnableAutoConfiguration 的配置项内容
 
 
 
