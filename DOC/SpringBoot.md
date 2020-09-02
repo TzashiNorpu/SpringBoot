@@ -803,6 +803,8 @@ java -jar spring-boot-02-config-02-0.0.1-SNAPSHOT.jar --server.port=8087  --serv
 
 11.通过SpringApplication.setDefaultProperties指定的默认属性
 
+jar包外部:maven打包的工程的jar包可以和一个application.yml文件放在一起，利用jar -jar xxx.jar启动工程后，工程会自动读入这个yml文件的配置内容(且优先级较高)--这个yml配置文件就是jar包外部的配置文件，如何创建jar包外部带profile的配置文件？
+
 所有支持的配置加载来源；
 
 [参考官方文档](https://docs.spring.io/spring-boot/docs/1.5.9.RELEASE/reference/htmlsingle/#boot-features-external-config)
