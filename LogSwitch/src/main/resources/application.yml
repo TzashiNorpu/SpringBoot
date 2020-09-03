@@ -1,0 +1,9 @@
+logging:
+  level:
+    com.tz: trace
+  file:
+#    name: test.log  #D:/test.log
+    path: /spring/log
+#  pattern:
+#    console:
+#    file:

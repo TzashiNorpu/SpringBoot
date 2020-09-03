@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/Crud/pom.xml" />
         <option value="$PROJECT_DIR$/ExternalTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/DataAccess/pom.xml" />
+        <option value="$PROJECT_DIR$/LogSwitch/pom.xml" />
       </list>
     </option>
   </component>

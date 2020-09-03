@@ -942,7 +942,7 @@ org.springframework.boot.autoconfigure.websocket.WebSocketMessagingAutoConfigura
 org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration
 ```
 
-每一个这样的  xxxAutoConfiguration类都是容器中的一个组件，都加入到容器中；用他们来做自动配置；
+每一个这样的  xxxAutoConfiguration 类都是容器中的一个组件，都加入到容器中；用他们来做自动配置；
 
 3）、每一个自动配置类进行自动配置功能；
 
@@ -985,7 +985,7 @@ public class HttpEncodingAutoConfiguration {
 
 
 
-
+Tomcat默认的8080端口配置在 AbstractConfigurableWebServerFactory 类中
 
 
 

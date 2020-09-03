@@ -1,0 +1,9 @@
+2020-09-03 17:57:39.577  INFO 11940 --- [main] com.tz.LogswitchApplicationTests         : Starting LogswitchApplicationTests on FD-190711l450 with PID 11940 (started by FUDIAN in D:\SpringProject\SpringBoot\SpringBoot\LogSwitch)
+2020-09-03 17:57:39.579 DEBUG 11940 --- [main] com.tz.LogswitchApplicationTests         : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-03 17:57:39.580  INFO 11940 --- [main] com.tz.LogswitchApplicationTests         : No active profile set, falling back to default profiles: default
+2020-09-03 17:57:40.779  INFO 11940 --- [main] com.tz.LogswitchApplicationTests         : Started LogswitchApplicationTests in 2.213 seconds (JVM running for 7.861)
+2020-09-03 17:57:41.233 TRACE 11940 --- [main] com.tz.LogswitchApplicationTests         : trace Hello World
+2020-09-03 17:57:41.234 DEBUG 11940 --- [main] com.tz.LogswitchApplicationTests         : debug Hello World
+2020-09-03 17:57:41.234  INFO 11940 --- [main] com.tz.LogswitchApplicationTests         : info Hello World
+2020-09-03 17:57:41.234  WARN 11940 --- [main] com.tz.LogswitchApplicationTests         : warn Hello World
+2020-09-03 17:57:41.235 ERROR 11940 --- [main] com.tz.LogswitchApplicationTests         : error Hello World
