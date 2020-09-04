@@ -56,5 +56,12 @@ jcl-over-slf4j.jar："偷天换日包",jcl-over-slf4j.jar中有和 commons-loggi
     E:\MvnRepo\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar!
     \org\springframework\boot\logging\logback\base.xml
 */
+/*
+console-appender.xml：控制台的日志格式
+file-appender.xml:文件的日志格式
+实现自己的日志配置文件：参考 Spring Boot 参考手册的日志章节
+
+注意 logback.xml 和 logback-spring.xml 的区别
+*/
 
 }
