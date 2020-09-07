@@ -7,11 +7,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class MyServlet extends HttpServlet {
-
+    //    在 MyServerConfig 中进行注册
     //处理get请求
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost(req,resp);
+        doPost(req, resp);
     }
 
     @Override

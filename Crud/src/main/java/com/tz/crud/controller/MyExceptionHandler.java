@@ -35,7 +35,7 @@ public class MyExceptionHandler {
         map.put("message", "用户出错啦");
 
         request.setAttribute("ext", map);
-        //转发到/error
+        //转发到/error 交给 BasicErrorController 处理
         return "forward:/error";
     }
 }

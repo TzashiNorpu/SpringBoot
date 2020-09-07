@@ -83,9 +83,9 @@ public class MyServerConfig {
 
     @Component
     public class CustomizationBean implements
-            WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
+            WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
         @Override
-        public void customize(ConfigurableServletWebServerFactory server) {
+        public void customize(ConfigurableWebServerFactory server) {
             server.setPort(9000);
         }
     }
