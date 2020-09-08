@@ -15,10 +15,12 @@
         <module name="Crud" />
         <module name="LogSwitch" />
         <module name="ConfigfileLoad" />
+        <module name="BootstrapAndCustomStarter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutoConfig" target="1.8" />
+      <module name="BootstrapAndCustomStarter" target="1.8" />
       <module name="ConfigFile" target="1.8" />
       <module name="ConfigfileLoad" target="1.8" />
       <module name="Crud" target="1.8" />
@@ -31,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AutoConfig" options="-parameters" />
+      <module name="BootstrapAndCustomStarter" options="-parameters" />
       <module name="ConfigFile" options="-parameters" />
       <module name="ConfigfileLoad" options="-parameters" />
       <module name="Crud" options="-parameters" />

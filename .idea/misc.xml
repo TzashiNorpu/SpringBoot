@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/ExternalTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/DataAccess/pom.xml" />
         <option value="$PROJECT_DIR$/LogSwitch/pom.xml" />
+        <option value="$PROJECT_DIR$/BootstrapAndCustomStarter/pom.xml" />
       </list>
     </option>
   </component>
