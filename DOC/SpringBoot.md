@@ -987,9 +987,11 @@ public class HttpEncodingAutoConfiguration {
 
 Tomcat默认的8080端口配置在 AbstractConfigurableWebServerFactory 类中
 嵌入式 Tomcat 的自动配置：
-- EmbeddedWebServerFactoryCustomizerAutoConfiguration.java ： 注册 TomcatWebServerFactoryCustomizer 对象并拿到配置文件信息，初始配置
+- EmbeddedWebServerFactoryCustomizerAutoConfiguration.java ： 注册 TomcatWebServerFactoryCustomizer 对象并拿到配置文件信息，初始配置，也是用 customize 实现的
     - return new TomcatWebServerFactoryCustomizer(environment, serverProperties);
     - public class TomcatWebServerFactoryCustomizer implements WebServerFactoryCustomizer<ConfigurableTomcatWebServerFactory>, Ordered
+    - 实现了 Order 接口，会先调用，自定义实现的 WebServerFactoryCustomizer 不实现 Order 接口，后被调用
+    - ConfigurableTomcatWebServerFactory 里的对象由 ServletWebServerFactoryAutoConfiguration 进行注入，这个对象也即是创建出来的 Servlet 容器，如 Tomcat
 - ServletWebServerFactoryAutoConfiguration.java 注册 TomcatServletWebServerFactory 对象
     - @Import(ServletWebServerFactoryConfiguration.EmbeddedTomcat.class)
     - ServletWebServerFactoryConfiguration.EmbeddedTomcat.java 

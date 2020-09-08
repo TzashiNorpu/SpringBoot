@@ -5,7 +5,7 @@
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://101.200.210.117:3306/jdbc</jdbc-url>
+      <jdbc-url>jdbc:mysql://101.200.210.117:3306/SpringBootExDB</jdbc-url>
     </data-source>
   </component>
 </project>

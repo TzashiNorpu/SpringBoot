@@ -1,12 +1,19 @@
 #101.200.210.117
 spring:
+  # jpa:Java Persistence Api 参考手册：Java Persistence Api x.x-final-spec.pdf
+  jpa:
+    hibernate:
+      #更新或者创建数据表结构
+      ddl-auto: update
+    #控制台显示SQL
+    show-sql: true
+  #      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://101.200.210.117:3306/jdbc
+    url: jdbc:mysql://101.200.210.117:3306/SpringBootExDB
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-
     #  Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'.
     #  The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
     initialSize: 5
@@ -27,7 +34,16 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 #    springboot 2.x配置该项才会自动执行脚本
     initialization-mode: always
-#    schema:
-#      - classpath:department.sql
+    schema:
+      - classpath:sql/department.sql
+      - classpath:sql/employee.sql
+
+mybatis:
+  # 指定全局配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
 
 
