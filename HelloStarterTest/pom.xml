@@ -8,11 +8,11 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tz</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.tzashi.norpu</groupId>
+    <artifactId>hello-starter-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>BootstrapAndCustomStarter</description>
+    <name>hello-starter-test</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -1,10 +1,10 @@
-package com.tz.demo;
+package com.tzashi.norpu.hellostartertest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class HelloStarterTestApplicationTests {
 
     @Test
     void contextLoads() {

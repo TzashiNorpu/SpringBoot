@@ -15,7 +15,15 @@
         <option value="$PROJECT_DIR$/DataAccess/pom.xml" />
         <option value="$PROJECT_DIR$/LogSwitch/pom.xml" />
         <option value="$PROJECT_DIR$/BootstrapAndCustomStarter/pom.xml" />
+        <option value="$PROJECT_DIR$/HelloStarter/pom.xml" />
+        <option value="$PROJECT_DIR$/HelloStarterAutoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/HelloStarterTest/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/HelloStarterAutoConfigure/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">

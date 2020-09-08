@@ -15,17 +15,19 @@
         <module name="Crud" />
         <module name="LogSwitch" />
         <module name="ConfigfileLoad" />
-        <module name="BootstrapAndCustomStarter" />
+        <module name="HelloStarter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutoConfig" target="1.8" />
-      <module name="BootstrapAndCustomStarter" target="1.8" />
       <module name="ConfigFile" target="1.8" />
       <module name="ConfigfileLoad" target="1.8" />
       <module name="Crud" target="1.8" />
       <module name="DataAccess" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
+      <module name="HelloStarter" target="1.8" />
+      <module name="HelloStarterAutoconfigure" target="1.8" />
+      <module name="HelloStarterAutoConfigure" target="1.8" />
       <module name="HelloWorld" target="1.8" />
       <module name="LogSwitch" target="1.8" />
     </bytecodeTargetLevel>
@@ -33,12 +35,14 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AutoConfig" options="-parameters" />
-      <module name="BootstrapAndCustomStarter" options="-parameters" />
       <module name="ConfigFile" options="-parameters" />
       <module name="ConfigfileLoad" options="-parameters" />
       <module name="Crud" options="-parameters" />
       <module name="DataAccess" options="-parameters" />
       <module name="ExternalTomcat" options="-parameters" />
+      <module name="HelloStarter" options="-parameters" />
+      <module name="HelloStarterAutoConfigure" options="-parameters" />
+      <module name="HelloStarterAutoconfigure" options="-parameters" />
       <module name="HelloWorld" options="-parameters" />
       <module name="LogSwitch" options="-parameters" />
     </option>
