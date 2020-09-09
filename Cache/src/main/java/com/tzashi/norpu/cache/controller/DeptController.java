@@ -1,4 +1,3 @@
-/*
 package com.tzashi.norpu.cache.controller;
 
 import com.tzashi.norpu.cache.bean.Department;
@@ -19,4 +18,3 @@ public class DeptController {
         return deptService.getDeptById(id);
     }
 }
-*/

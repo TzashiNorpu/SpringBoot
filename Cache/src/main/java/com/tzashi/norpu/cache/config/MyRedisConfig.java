@@ -3,18 +3,26 @@ package com.tzashi.norpu.cache.config;
 
 import com.tzashi.norpu.cache.bean.Department;
 import com.tzashi.norpu.cache.bean.Employee;
+import org.springframework.beans.factory.ObjectProvider;
+import org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers;
+import org.springframework.boot.autoconfigure.cache.CacheProperties;
+import org.springframework.boot.autoconfigure.cache.RedisCacheManagerBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.cache.RedisCacheWriter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 
 import java.net.UnknownHostException;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Objects;
 
 @Configuration
@@ -41,6 +49,8 @@ public class MyRedisConfig {
         template.setDefaultSerializer(ser);
         return template;
     }
+
+
     @Primary  //将某个缓存管理器作为默认的
     @Bean
     public RedisCacheManager employeeCacheManager(RedisTemplate redisTemplate) {
@@ -54,7 +64,7 @@ public class MyRedisConfig {
         return new RedisCacheManager(redisCacheWriter, redisCacheConfiguration);
     }
 
-    @Bean
+    @Bean("deptCacheManager")
     public RedisCacheManager departmentCacheManager(RedisTemplate redisTemplate) {
         return new RedisCacheManager(
                 RedisCacheWriter
@@ -69,8 +79,8 @@ public class MyRedisConfig {
                                         .getValueSerializationPair()));
     }
 
-
 /*
+
     //CacheManagerCustomizers可以来定制缓存的一些规则
     @Primary  //将某个缓存管理器作为默认的
     @Bean
