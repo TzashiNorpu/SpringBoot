@@ -11,12 +11,12 @@
         <module name="ExternalTomcat" />
         <module name="HelloWorld" />
         <module name="ConfigFile" />
-        <module name="HelloStarterTest" />
-        <module name="Crud" />
-        <module name="AutoConfig" />
         <module name="DataAccess" />
         <module name="HelloStarterAutoconfigure" />
         <module name="LogSwitch" />
+        <module name="AutoConfig" />
+        <module name="Crud" />
+        <module name="HelloStarterTest" />
         <module name="ConfigfileLoad" />
         <module name="HelloStarter" />
       </profile>
@@ -29,7 +29,7 @@
       <module name="Crud" target="1.8" />
       <module name="DataAccess" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
-      <module name="HelloStarter" target="1.5" />
+      <module name="HelloStarter" target="1.8" />
       <module name="HelloStarterAutoconfigure" target="1.8" />
       <module name="HelloStarterAutoConfigure" target="1.8" />
       <module name="HelloStarterTest" target="1.8" />
