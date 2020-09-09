@@ -6,12 +6,16 @@ import com.tzashi.norpu.cache.bean.Employee;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
+import org.springframework.data.redis.cache.RedisCacheWriter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.RedisSerializationContext;
 
 import java.net.UnknownHostException;
+import java.util.Objects;
 
 @Configuration
 public class MyRedisConfig {
@@ -20,21 +24,49 @@ public class MyRedisConfig {
     public RedisTemplate<Object, Employee> empRedisTemplate(
             RedisConnectionFactory redisConnectionFactory)
             throws UnknownHostException {
-        RedisTemplate<Object, Employee> template = new RedisTemplate<Object, Employee>();
+        RedisTemplate<Object, Employee> template = new RedisTemplate<>();
         template.setConnectionFactory(redisConnectionFactory);
-        Jackson2JsonRedisSerializer<Employee> ser = new Jackson2JsonRedisSerializer<Employee>(Employee.class);
+        Jackson2JsonRedisSerializer<Employee> ser = new Jackson2JsonRedisSerializer<>(Employee.class);
         template.setDefaultSerializer(ser);
         return template;
     }
+
     @Bean
     public RedisTemplate<Object, Department> deptRedisTemplate(
             RedisConnectionFactory redisConnectionFactory)
             throws UnknownHostException {
-        RedisTemplate<Object, Department> template = new RedisTemplate<Object, Department>();
+        RedisTemplate<Object, Department> template = new RedisTemplate<>();
         template.setConnectionFactory(redisConnectionFactory);
-        Jackson2JsonRedisSerializer<Department> ser = new Jackson2JsonRedisSerializer<Department>(Department.class);
+        Jackson2JsonRedisSerializer<Department> ser = new Jackson2JsonRedisSerializer<>(Department.class);
         template.setDefaultSerializer(ser);
         return template;
+    }
+    @Primary  //将某个缓存管理器作为默认的
+    @Bean
+    public RedisCacheManager employeeCacheManager(RedisTemplate redisTemplate) {
+        RedisCacheWriter redisCacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(Objects.requireNonNull(redisTemplate.getConnectionFactory()));
+
+        Jackson2JsonRedisSerializer<Employee> serializer = new Jackson2JsonRedisSerializer<>(Employee.class);
+
+        RedisSerializationContext<Employee, Employee> employeeEmployeeRedisSerializationContext = RedisSerializationContext.fromSerializer(serializer);
+        RedisCacheConfiguration redisCacheConfiguration = RedisCacheConfiguration.defaultCacheConfig().serializeValuesWith(employeeEmployeeRedisSerializationContext.getValueSerializationPair());
+
+        return new RedisCacheManager(redisCacheWriter, redisCacheConfiguration);
+    }
+
+    @Bean
+    public RedisCacheManager departmentCacheManager(RedisTemplate redisTemplate) {
+        return new RedisCacheManager(
+                RedisCacheWriter
+                        .nonLockingRedisCacheWriter(Objects
+                                .requireNonNull(redisTemplate
+                                        .getConnectionFactory())),
+                RedisCacheConfiguration
+                        .defaultCacheConfig()
+                        .serializeValuesWith(
+                                RedisSerializationContext
+                                        .fromSerializer(new Jackson2JsonRedisSerializer<>(RedisCacheManager.class))
+                                        .getValueSerializationPair()));
     }
 
 
