@@ -2,11 +2,13 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
     <file url="file://$PROJECT_DIR$/AutoConfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ConfigFile/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Crud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DataAccess/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ExternalTomcat/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/HelloStarter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HelloStarterAutoconfigure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HelloStarterTest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HelloWorld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LogSwitch/src/main/java" charset="UTF-8" />
   </component>

@@ -11,7 +11,7 @@
     <groupId>com.tzashi.norpu</groupId>
     <artifactId>hello-starter-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hello-starter-test</name>
+    <name>hellostartertest</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -22,6 +22,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tzashi.norpu</groupId>
+            <artifactId>hello-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
