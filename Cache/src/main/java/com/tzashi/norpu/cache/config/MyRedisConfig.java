@@ -75,7 +75,7 @@ public class MyRedisConfig {
                         .defaultCacheConfig()
                         .serializeValuesWith(
                                 RedisSerializationContext
-                                        .fromSerializer(new Jackson2JsonRedisSerializer<>(RedisCacheManager.class))
+                                        .fromSerializer(new Jackson2JsonRedisSerializer<>(Department.class))
                                         .getValueSerializationPair()));
     }
 

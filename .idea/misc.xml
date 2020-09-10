@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/HelloStarterAutoconfigure/pom.xml" />
         <option value="$PROJECT_DIR$/HelloStarterTest/pom.xml" />
         <option value="$PROJECT_DIR$/Cache/pom.xml" />
+        <option value="$PROJECT_DIR$/MQ/pom.xml" />
+        <option value="$PROJECT_DIR$/ElasticSearch/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,12 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/ConfigfileLoad/ConfigfileLoad.iml" filepath="$PROJECT_DIR$/ConfigfileLoad/ConfigfileLoad.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crud/Crud.iml" filepath="$PROJECT_DIR$/Crud/Crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataAccess/DataAccess.iml" filepath="$PROJECT_DIR$/DataAccess/DataAccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElasticSearch/ElasticSearch.iml" filepath="$PROJECT_DIR$/ElasticSearch/ElasticSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExternalTomcat/ExternalTomcat.iml" filepath="$PROJECT_DIR$/ExternalTomcat/ExternalTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloStarter/HelloStarter.iml" filepath="$PROJECT_DIR$/HelloStarter/HelloStarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloStarterAutoconfigure/HelloStarterAutoconfigure.iml" filepath="$PROJECT_DIR$/HelloStarterAutoconfigure/HelloStarterAutoconfigure.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloStarterTest/HelloStarterTest.iml" filepath="$PROJECT_DIR$/HelloStarterTest/HelloStarterTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/LogSwitch/LogSwitch.iml" filepath="$PROJECT_DIR$/LogSwitch/LogSwitch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MQ/MQ.iml" filepath="$PROJECT_DIR$/MQ/MQ.iml" />
     </modules>
   </component>
 </project>

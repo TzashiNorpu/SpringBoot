@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ElasticsearchConfiguration">
+    <option name="clusterConfigurations">
+      <map>
+        <entry key="AliES">
+          <value>
+            <ClusterConfigInternal>
+              <option name="id" value="ef96ad0c-ccb4-4e2e-ba6a-7711f738f254" />
+              <option name="label" value="AliES" />
+              <option name="url" value="http://101.200.210.117:29200" />
+              <option name="credentialsStored" value="false" />
+              <option name="sslConfigStored" value="false" />
+            </ClusterConfigInternal>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

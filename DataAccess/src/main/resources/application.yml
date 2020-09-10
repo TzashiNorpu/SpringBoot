@@ -10,8 +10,8 @@ spring:
   #      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://101.200.210.117:3306/SpringBootExDB
+    password: yzs74520
+    url: jdbc:mysql://101.200.210.117:23306/SpringBootExDB
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     #  Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'.
@@ -34,9 +34,9 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 #    springboot 2.x配置该项才会自动执行脚本
     initialization-mode: always
-    schema:
-      - classpath:sql/department.sql
-      - classpath:sql/employee.sql
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
 
 mybatis:
   # 指定全局配置文件位置
