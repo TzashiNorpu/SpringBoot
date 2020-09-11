@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/ConfigfileLoad/ConfigfileLoad.iml" filepath="$PROJECT_DIR$/ConfigfileLoad/ConfigfileLoad.iml" />
       <module fileurl="file://$PROJECT_DIR$/Crud/Crud.iml" filepath="$PROJECT_DIR$/Crud/Crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataAccess/DataAccess.iml" filepath="$PROJECT_DIR$/DataAccess/DataAccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DubboConsumer/DubboConsumer.iml" filepath="$PROJECT_DIR$/DubboConsumer/DubboConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DubboProvider/DubboProvider.iml" filepath="$PROJECT_DIR$/DubboProvider/DubboProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/ElasticSearch/ElasticSearch.iml" filepath="$PROJECT_DIR$/ElasticSearch/ElasticSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExternalTomcat/ExternalTomcat.iml" filepath="$PROJECT_DIR$/ExternalTomcat/ExternalTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloStarter/HelloStarter.iml" filepath="$PROJECT_DIR$/HelloStarter/HelloStarter.iml" />

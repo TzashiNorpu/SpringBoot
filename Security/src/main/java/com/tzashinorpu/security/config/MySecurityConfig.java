@@ -18,7 +18,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
-    public void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {
         //super.configure(http);
         //定制请求的授权规则
         http.authorizeRequests().antMatchers("/").permitAll()
@@ -62,7 +62,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     }
     //定义认证规则
     @Override
-    public void configure(AuthenticationManagerBuilder auth) throws Exception {
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         //super.configure(auth);
         auth.inMemoryAuthentication()
                 .passwordEncoder(new MyPasswordEncoder()).withUser("zhangsan").password("123456").roles("VIP1", "VIP2")

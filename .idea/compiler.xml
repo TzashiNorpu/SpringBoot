@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ElasticSearch" />
+        <module name="DubboProvider" />
         <module name="ExternalTomcat" />
         <module name="HelloStarter" />
         <module name="ConfigFile" />
@@ -23,6 +24,7 @@
         <module name="HelloStarterTest" />
         <module name="DataAccess" />
         <module name="Security" />
+        <module name="DubboConsumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +34,8 @@
       <module name="ConfigfileLoad" target="1.8" />
       <module name="Crud" target="1.8" />
       <module name="DataAccess" target="1.8" />
+      <module name="DubboConsumer" target="1.8" />
+      <module name="DubboProvider" target="1.8" />
       <module name="ElasticSearch" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
       <module name="HelloStarter" target="1.8" />
@@ -53,6 +57,8 @@
       <module name="ConfigfileLoad" options="-parameters" />
       <module name="Crud" options="-parameters" />
       <module name="DataAccess" options="-parameters" />
+      <module name="DubboConsumer" options="-parameters" />
+      <module name="DubboProvider" options="-parameters" />
       <module name="ElasticSearch" options="-parameters" />
       <module name="ExternalTomcat" options="-parameters" />
       <module name="HelloStarter" options="" />

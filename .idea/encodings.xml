@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/ConfigFile/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Crud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DataAccess/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DubboConsumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DubboProvider/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ElasticSearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ExternalTomcat/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HelloStarterAutoconfigure/src/main/java" charset="UTF-8" />

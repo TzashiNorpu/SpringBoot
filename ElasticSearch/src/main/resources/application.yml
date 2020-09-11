@@ -1,4 +1,4 @@
-spring:
-  elasticsearch:
-    rest:
-      uris: 101.200.210.117:29200
+#spring:
+#  elasticsearch:
+#    rest:
+#      uris: 101.200.210.117:29200
