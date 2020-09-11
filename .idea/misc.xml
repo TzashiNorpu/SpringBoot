@@ -21,6 +21,8 @@
         <option value="$PROJECT_DIR$/Cache/pom.xml" />
         <option value="$PROJECT_DIR$/MQ/pom.xml" />
         <option value="$PROJECT_DIR$/ElasticSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/Task/pom.xml" />
+        <option value="$PROJECT_DIR$/Security/pom.xml" />
       </list>
     </option>
   </component>

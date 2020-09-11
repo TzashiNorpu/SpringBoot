@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/LogSwitch/LogSwitch.iml" filepath="$PROJECT_DIR$/LogSwitch/LogSwitch.iml" />
       <module fileurl="file://$PROJECT_DIR$/MQ/MQ.iml" filepath="$PROJECT_DIR$/MQ/MQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Security/Security.iml" filepath="$PROJECT_DIR$/Security/Security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task/Task.iml" filepath="$PROJECT_DIR$/Task/Task.iml" />
     </modules>
   </component>
 </project>

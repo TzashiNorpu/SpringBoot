@@ -2,10 +2,6 @@ package com.tzashinorpu.elasticsearch;
 
 import com.tzashinorpu.elasticsearch.bean.Article;
 import com.tzashinorpu.elasticsearch.bean.Book;
-import io.searchbox.client.JestClient;
-import io.searchbox.core.Index;
-import io.searchbox.core.Search;
-import io.searchbox.core.SearchResult;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,8 +11,9 @@ import java.io.IOException;
 @SpringBootTest
 class ElasticsearchApplicationTests {
 
-    @Autowired
-    JestClient jestClient;
+/*    @Autowired
+    JestClient jestClient;*//*    @Autowired
+    JestClient jestClient;*/
 
  /*   @Autowired
     BookRepository bookRepository;*/
@@ -40,7 +37,7 @@ class ElasticsearchApplicationTests {
 
     @Test
     public void contextLoads() {
-        //1、给Es中索引（保存）一个文档；
+      /*  //1、给Es中索引（保存）一个文档；
         Article article = new Article();
         article.setId(1);
         article.setTitle("好消息");
@@ -55,10 +52,10 @@ class ElasticsearchApplicationTests {
             jestClient.execute(index);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
-    //测试搜索
+    /*//测试搜索
     @Test
     public void search() {
 
@@ -83,4 +80,4 @@ class ElasticsearchApplicationTests {
             e.printStackTrace();
         }
     }
-}
+*/}
