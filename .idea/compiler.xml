@@ -34,7 +34,7 @@
       <module name="DataAccess" target="1.8" />
       <module name="ElasticSearch" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
-      <module name="HelloStarter" target="1.5" />
+      <module name="HelloStarter" target="1.8" />
       <module name="HelloStarterAutoconfigure" target="1.8" />
       <module name="HelloStarterAutoConfigure" target="1.8" />
       <module name="HelloStarterTest" target="1.8" />
