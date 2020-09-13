@@ -1,14 +1,14 @@
 package com.tzashinorpu.dubboconsumer.service;
 
 
-import com.alibaba.dubbo.config.annotation.Reference;
 import com.tzashinorpu.dubboprovider.service.TicketService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService{
 
-    @Reference
+    @DubboReference
     TicketService ticketService;
 
     public void hello(){

@@ -1,11 +1,12 @@
 package com.tzashinorpu.dubboprovider.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.stereotype.Component;
 
 
 @Component
-@Service //将服务发布出去
+@EnableDubbo //将服务发布出去
 public class TicketServiceImpl implements TicketService {
     @Override
     public String getTicket() {
