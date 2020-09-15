@@ -11,3 +11,7 @@ public class DubboProviderApplication {
     }
 
 }
+/*
+https://github.com/apache/dubbo/releases/tag/dubbo-2.7.1
+        zkclient' extension for 'org.apache.dubbo.remoting.zookeeper.ZookeeperTransporter' is removed from Dubbo 2.7.1, and 'curator' extension
+        becomes the default extension. If you happen to config your application to use 'zkclient' explicitly, pls. switch to use 'curator' instead.*/

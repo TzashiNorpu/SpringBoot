@@ -22,6 +22,7 @@
         <module name="AutoConfig" />
         <module name="Task" />
         <module name="HelloStarterTest" />
+        <module name="Monitor" />
         <module name="DataAccess" />
         <module name="Security" />
         <module name="DubboConsumer" />
@@ -38,12 +39,13 @@
       <module name="DubboProvider" target="1.8" />
       <module name="ElasticSearch" target="1.8" />
       <module name="ExternalTomcat" target="1.8" />
-      <module name="HelloStarter" target="1.8" />
+      <module name="HelloStarter" target="1.5" />
       <module name="HelloStarterAutoconfigure" target="1.8" />
       <module name="HelloStarterAutoConfigure" target="1.8" />
       <module name="HelloStarterTest" target="1.8" />
       <module name="HelloWorld" target="1.8" />
       <module name="LogSwitch" target="1.8" />
+      <module name="Monitor" target="1.8" />
       <module name="MQ" target="1.8" />
       <module name="Security" target="1.8" />
       <module name="Task" target="1.8" />
@@ -68,6 +70,7 @@
       <module name="HelloWorld" options="-parameters" />
       <module name="LogSwitch" options="-parameters" />
       <module name="MQ" options="-parameters" />
+      <module name="Monitor" options="-parameters" />
       <module name="Security" options="-parameters" />
       <module name="Task" options="-parameters" />
     </option>

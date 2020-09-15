@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/Security/pom.xml" />
         <option value="$PROJECT_DIR$/DubboConsumer/pom.xml" />
         <option value="$PROJECT_DIR$/DubboProvider/pom.xml" />
+        <option value="$PROJECT_DIR$/Monitor/pom.xml" />
       </list>
     </option>
   </component>
